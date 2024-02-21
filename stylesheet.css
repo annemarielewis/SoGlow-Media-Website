@@ -8,21 +8,38 @@ body {
     height: 100%;
     background-color: rgb(236, 241, 252);
     box-shadow: inset 0 0 20px 0 rgba(174, 187, 251, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+#quote-container {
+    display: inline-block;
+    background-color: blue;
+    position: relative;
 }
 
 .quote {
+
     width: 60rem; 
     height: 50rem;
     transform: scaleX(-1);
 }
 
-#quote-container {
+#quote-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+
+#sophie-quote {
     display: flex;
-    width: 100vh; /* Ensure container takes full viewport widtht */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 
 #topbanner {
     display: flex;
