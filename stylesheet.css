@@ -1,12 +1,45 @@
+body {
+    height: 100vh; /* 100% of viewport height */
+    background-color: rgb(236, 241, 252);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 241, 252);
+    box-shadow: inset 0 0 20px 0 rgba(174, 187, 251, 0.5);
+}
+
+.quote {
+    width: 60rem; 
+    height: 50rem;
+    transform: scaleX(-1);
+}
+
+#quote-container {
+    display: flex;
+    width: 100vh; /* Ensure container takes full viewport widtht */
+    justify-content: center;
+    align-items: center;
+}
+
+
 #topbanner {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: blue;
+    margin-top: -1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: white;
     
 }
 
-html {
-    background: white;
-  }
+a {
+font-size: 22px;
+font-weight: bold;
+margin-right: 1rem;
+text-decoration: none;
+color: rgb(76, 128, 241);
+}
