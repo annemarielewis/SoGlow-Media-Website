@@ -16,12 +16,13 @@ body {
     display: inline-block;
     background-color: blue;
     position: relative;
+    margin-top: -9rem;
+    z-index: 0;
 }
 
 .quote {
-
-    width: 60rem; 
-    height: 50rem;
+    width: 70rem; 
+    height: 60rem;
     transform: scaleX(-1);
 }
 
@@ -32,13 +33,17 @@ body {
     transform: translate(-50%, -50%);
     color: rgb(15, 15, 15);
     text-align: center;
+    
 }
 
 #sophie-quote {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: 0rem;
+    padding: 0rem;
+    
 }
 
 .logo {
@@ -54,9 +59,10 @@ body {
     align-items: center;
     padding: 1rem;
     padding-left: 0rem;
+    padding-bottom: .5rem;
 }
 
-img {
+.logo {
     padding-right: 1rem;
 }
 
@@ -69,6 +75,8 @@ img {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     background-color: white;
+    position: relative;
+    z-index: 10;
     
 }
 
@@ -77,6 +85,7 @@ font-size: 22px;
 font-weight: bold;
 margin-right: 1rem;
 text-decoration: none;
-color: rgb(76, 128, 241);
+color: rgb(80, 150, 248);
+z-index: 10;
 }
 
