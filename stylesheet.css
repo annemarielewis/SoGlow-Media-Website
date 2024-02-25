@@ -12,28 +12,50 @@ body {
     justify-content: center;
 }
 
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+a {
+    font-size: 22px;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgb(80, 150, 248);
+    z-index: 10;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-style: italic;
+    }
+  
 #quote-container {
     display: inline-block;
     background-color: blue;
     position: relative;
-    margin-top: -9rem;
+    margin-top: -3rem;
     z-index: 0;
 }
 
 .quote {
-    width: 70rem; 
-    height: 60rem;
+    width: 60rem; 
+    height: 50rem;
     transform: scaleX(-1);
 }
 
 #quote-text {
     position: absolute;
-    top: 40%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(15, 15, 15);
-    text-align: center;
-    
+    color: rgb(135, 133, 133);
+    text-align: left;
+    width: 40rem;
+    font-size:xx-large;
 }
 
 #sophie-quote {
@@ -43,7 +65,6 @@ body {
     align-items: flex-start;
     margin: 0rem;
     padding: 0rem;
-    
 }
 
 .logo {
@@ -57,9 +78,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding-top: 1rem;
     padding-left: 0rem;
-    padding-bottom: .5rem;
+    padding-bottom: .25rem;
 }
 
 .logo {
@@ -71,21 +92,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: -1rem;
+    margin-top: -2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     background-color: white;
     position: relative;
     z-index: 10;
-    
 }
-
-a {
-font-size: 22px;
-font-weight: bold;
-margin-right: 1rem;
-text-decoration: none;
-color: rgb(80, 150, 248);
-z-index: 10;
-}
-
