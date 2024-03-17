@@ -41,12 +41,6 @@ a {
     z-index: 0;
 }
 
-.quote {
-    width: 60rem; 
-    height: 50rem;
-    transform: scaleX(-1);
-}
-
 #quote-text {
     position: absolute;
     top: 36%;
@@ -99,4 +93,23 @@ a {
     background-color: white;
     position: relative;
     z-index: 10;
+}
+
+#sophie2 {
+display: inline-block;
+width: 20rem;
+}
+
+.sophie_img {
+    width: 20rem;
+}
+.quote {
+    width: 60rem; 
+    height: 50rem;
+    transform: scaleX(-1);
+}
+
+@media (max-width: 600px) {
+    /* css for screens below or equal to 600px wide */
+
 }
