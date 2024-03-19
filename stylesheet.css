@@ -37,14 +37,23 @@ a {
     display: inline-block;
     background-color: blue;
     position: relative;
-    margin-top: -3rem;
     z-index: 0;
+}
+
+.quote {
+    display: flex;
+    align-items: flex-start;
+    width: 60rem; 
+    height: 56rem;
+    transform: scaleX(-1);
+    margin-top: -10rem;
+    margin-left: -7rem;
 }
 
 #quote-text {
     position: absolute;
-    top: 36%;
-    left: 50%;
+    top: 37%;
+    left: 48%;
     transform: translate(-50%, -50%);
     color: rgb(135, 133, 133);
     text-align: left;
@@ -62,7 +71,7 @@ a {
 }
 
 .logo {
-    width: 4rem;
+    width: 5rem;
     height: 5rem;
 
 }
@@ -102,14 +111,51 @@ width: 20rem;
 
 .sophie_img {
     width: 20rem;
-}
-.quote {
-    width: 60rem; 
-    height: 50rem;
-    transform: scaleX(-1);
+    margin-right: auto;
+
+
+.sophie_and_quote {
+    display: flex;
+    gap: 0rem;
+    flex-direction: row;
+    justify-content: center;
+}}
+
+.flex-btns {
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 600px) {
+
+.btn-primary {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: -2.5rem;
+    margin-left: 0rem;
+}
+@media (max-width: 400px) {
     /* css for screens below or equal to 600px wide */
+    #quote-text {
+        width: 40rem;
+        font-size: x-large;
+    }
 
+    #quote-container {
+        margin-left: -3rem;
+        display: inline-block;
+    }
+
+    .quote {
+        display: inline-block;
+        width: 30rem;
+        height: 41rem;
+        margin-top: -6rem;
+        
+    }
+    #quote-text {
+        width: 20rem;
+        font-size: x-large;
+        margin-top: -1rem;
+        padding-bottom: 1rem;
+    }
 }
