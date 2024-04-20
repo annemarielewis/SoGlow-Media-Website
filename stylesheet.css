@@ -22,35 +22,131 @@ h1 {
 
 a {
     font-size: 22px;
+    font-weight: 600;
     margin-right: 1rem;
     text-decoration: none;
     color: rgb(80, 150, 248);
     z-index: 10;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+    /* font-family: "Raleway", sans-serif; */
+    /* font-optical-sizing: auto; */
+    /* font-style: normal; */
     font-style: italic;
     }
-  
-#quote-container {
-    display: inline-block;
-    background-color: blue;
-    position: relative;
-    z-index: 0;
-    align-self: flex-start;
-}
 
-#quote-text {
-    position: absolute;
-    top: 37%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    color: rgb(135, 133, 133);
-    text-align: left;
-    width: 40rem;
-    font-size:xx-large;
-}
+    a:hover {
+        font-weight: 900;
+        color: green;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .logo-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-bottom: .25rem;
+    }
+    
+    .logo {
+        padding-right: 1rem;
+    }
+    
+    #topbanner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -.5rem;
+        padding-left: 2rem;
+        padding-right: 2.5rem;
+        padding-bottom: .25rem;
+        background-color: white;
+        position: relative;
+        z-index: 10;
+    }
+
+    #quote-container {
+        position: relative;
+        /* background-color: blue; */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Stack items in a column */
+        justify-content: center; /* Align items vertically in the center */
+        align-items: center; /* Align items horizontally in the center */
+        /* height: 100vh; Adjust height as needed */
+    }
+
+    .contact_buttons {
+        margin: 0;
+    }
+    
+    .contact_btn {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: #fff;
+        font-style: italic;
+        font-weight: bolder;
+        padding: 10px 20px; /* Padding around the text */
+        border: none; /* No border */
+        border-radius: 10px; 
+        cursor: pointer; 
+        font-size: 20px; 
+    }
+
+    .contact_btn1 {
+        background-color: rgb(235, 210, 16);
+        text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.1),  
+         1px -1px 0 rgba(0, 0, 0, 0.1),
+        -1px  1px 0 rgba(0, 0, 0, 0.1),
+         1px  1px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .contact_btn2 {
+        background-color: #34b552;
+        color: #fff;
+      }
+
+      .contact_btn1:hover {
+        background-color: rgb(80, 150, 248); /* Green color on hover */
+      }
+
+      .contact_btn2:hover {
+        background-color:rgb(80, 150, 248); /* Green color on hover */
+      }
+
+
+    .quote {
+        /* background-color: red; */
+        display: flex;
+        align-items: flex-start;
+        height: 30rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        /* height: 60vh; */
+    }
+
+    #quote-text {
+        font-family: "Raleway", sans-serif;
+        font-weight: 1000;
+        letter-spacing: 2px;
+        position: absolute;
+        width: 80%;
+        height: 20rem;
+        font-size: x-large;
+        top: 31.5%;
+        left: 46.5%;
+        transform: translate(-50%, -50%);
+        color: grey;
+    }
+
 
 #sophie-quote {
     display: flex;
@@ -61,81 +157,31 @@ a {
     padding: 0rem;
 }
 
-.logo {
-    width: 5rem;
-    height: 5rem;
-}
-
-.logo-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    padding-left: 0rem;
-    padding-bottom: .25rem;
-}
-
-.logo {
-    padding-right: 1rem;
-}
-
-#topbanner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -1rem;
-    padding-left: .5rem;
-    padding-right: 1rem;
-    padding-bottom: .25rem;
-    background-color: white;
-    position: relative;
-    z-index: 10;
-}
-
-
 .sophie_and_quote {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 0rem;
     flex-direction: row;
     justify-content: center;
     height: 70vh;
 }
-.quote {
-    display: flex;
-    align-items: flex-start;
-    width: 60rem; 
-    height: 56rem;
-    transform: scaleX(-1);
-    margin-top: -9rem;
-    margin-left: -6rem;
-    /* height: 80vh; */
-}
+
 #sophie2 {
     display: flex;
     width: 20rem;
     align-self: flex-end;
+    margin-right: -1rem;
     }
 
 .sophie_img {
-    width: 20rem;
+    width: 27rem;
     margin-right: auto;
+    transform: scaleX(-1);
+    z-index: 2;
+    margin-bottom: -11rem;
    }
 
 
-.flex-btns {
-    display: flex;
-    justify-content: center;
-}
 
-.btn-primary {
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    margin-top: -2.5rem;
-    margin-left: 0rem;
-}
+
 @media (max-width: 400px) {
     /* css for screens below or equal to 600px wide */
     #quote-text {
@@ -149,16 +195,20 @@ a {
     }
 
     .quote {
-        display: inline-block;
+        /* display: inline-block; */
+        position: relative;
         width: 30rem;
         height: 41rem;
         margin-top: -6rem;
         
     }
     #quote-text {
-        width: 20rem;
+        position: absolute;
+        width: 15rem;
+        height: 20rem;
+        /* width: 20rem; */
         font-size: x-large;
-        margin-top: -1rem;
-        padding-bottom: 1rem;
+        /* margin-top: -10rem;
+        padding-bottom: 3rem; */
     }
 }
