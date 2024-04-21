@@ -4,12 +4,14 @@ body {
 }
 
 #main {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    height: auto;
     background-color: rgb(236, 241, 252);
     box-shadow: inset 0 0 20px 0 rgba(174, 187, 251, 0.5);
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -27,9 +29,6 @@ a {
     text-decoration: none;
     color: rgb(80, 150, 248);
     z-index: 10;
-    /* font-family: "Raleway", sans-serif; */
-    /* font-optical-sizing: auto; */
-    /* font-style: normal; */
     font-style: italic;
     }
 
@@ -58,6 +57,8 @@ a {
     }
     
     #topbanner {
+        position: fixed;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -67,7 +68,7 @@ a {
         padding-right: 2.5rem;
         padding-bottom: .25rem;
         background-color: white;
-        position: relative;
+        /* position: relative; */
         z-index: 10;
     }
 
@@ -161,14 +162,14 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 70vh;
+    margin-top: 10.5rem;
 }
 
-#sophie2 {
+#sophie {
     display: flex;
     width: 20rem;
     align-self: flex-end;
-    margin-right: -1rem;
+    margin-right: 1rem;
     }
 
 .sophie_img {
@@ -180,7 +181,118 @@ a {
    }
 
 
+#services_title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color:rgb(80, 150, 248);
+}
 
+#services {
+    margin-top: 12rem;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    /* background-color:rgb(208, 234, 42); */
+    height: 100vw;
+}
+
+/* services buttons */
+
+/* .expandable-btns {
+align-items: center;
+align-content: center;
+} */
+
+.expandable-btn {
+    margin: 1rem;
+    color: #fff;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 30px; 
+}
+
+.expandable-btn:hover {
+    background-color: rgb(250, 2, 209)
+}
+
+.expandable-btn1 {
+    background-color: rgb(73, 175, 73);
+}
+.expandable-btn2 {
+    background-color: rgb(80, 150, 248)
+}
+.expandable-btn3 {
+    background-color: rgb(235, 210, 16);
+}
+.expandable-btn4 {
+    background-color: rgb(80, 150, 248)
+}
+.expandable-btn5 {
+    background-color: rgb(235, 210, 16);
+    /* text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.1),  
+     1px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px  1px 0 rgba(0, 0, 0, 0.1),
+     1px  1px 0 rgba(0, 0, 0, 0.1); */
+}
+.expandable-btn6 {
+    background-color: rgb(73, 175, 73);
+}
+.expandable-content {
+    display: none;
+  }
+  .expanded {
+    display: block;
+  }
+
+.expanded_area1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .expanded_area2 {
+    display: flex;
+    justify-content: center;
+  }
+
+.expandable-paragraph {
+    font-size: 1.5vw;
+    width: 70vw;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.bold-text {
+    font-weight: bold !important;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#reviews {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color:rgb(80, 150, 248);
+    height: 100vw;
+}
 
 @media (max-width: 400px) {
     /* css for screens below or equal to 600px wide */

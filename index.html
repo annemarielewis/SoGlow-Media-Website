@@ -58,49 +58,74 @@
     </div>
     <div id="main">
       <div class="sophie_and_quote">
-        <div id="sophie2">
+        <div id="sophie">
           <img src="./media/sophie_image.png" class="sophie_img" />
         </div>
         <div id="quote-container">
           <img src="./media/Quote_with_outline.png" class="quote" />
           <div class="contact_buttons">
-            <button type="button" class="contact_btn contact_btn1" onclick="openTextMessage()">
+            <button
+              type="button"
+              class="contact_btn contact_btn1"
+              onclick="openTextMessage()"
+            >
               Text Me
             </button>
-            <button type="button" class="contact_btn contact_btn2" onclick="openEmail()">
+            <button
+              type="button"
+              class="contact_btn contact_btn2"
+              onclick="openEmail()"
+            >
               Email Me
             </button>
           </div>
         </div>
       </div>
 
-      <!-- image of sophie -->
-      <!-- <img scr="" alt="Image of Sophie, Owner of SoGlow"/> -->
-
       <!-- videos of work -->
-      <!-- <div id="gallery">
-      <ol>
-        <li>
-          <video>
-            <source src="./media/chocolate.mov" type="video/mp4" />
-          </video>
-        </li>
-        <li>
-          <video>
-            <source src="./media/chocolate.mov" type="video/mp4" />
-          </video>
-        </li>
-        <li>
-          <video>
-            <source src="./media/chocolate.mov" type="video/mp4" />
-          </video>
-        </li>
-      </ol>
-    </div> -->
+      <!-- <div id="gallery"></div> -->
 
-      <div id="services"></div>
+      <div id="services">
+        <div id="services_title">Services</div>
+        <div class="expandable-btns">
+          <div class="row1">
+            <button class="expandable-btn expandable-btn1" onclick="toggleExpand(this)">
+              Social Media Management
+            </button>
+            <div class="expandable-content"></div>
+      
+            <button class="expandable-btn expandable-btn2" onclick="toggleExpand(this)">
+              Content Production
+            </button>
+            <div class="expandable-content"></div>
+      
+            <button class="expandable-btn expandable-btn3" onclick="toggleExpand(this)">
+              Analytics and Strategy
+            </button>
+            <div class="expandable-content"></div>
+          </div>
+          <div class="expanded_area1"></div>
+          <div class="row2">
+            <button class="expandable-btn expandable-btn4" onclick="toggleExpand(this)">
+              Strategic Consulting
+            </button>
+            <div class="expandable-content"></div>
+      
+            <button class="expandable-btn expandable-btn5" onclick="toggleExpand(this)">
+              Event Engagement Package
+            </button>
+            <div class="expandable-content"></div>
+      
+            <button class="expandable-btn expandable-btn6" onclick="toggleExpand(this)">
+              Website Creation
+            </button>
+            <div class="expandable-content"></div>
+          </div>
+          <div class="expanded_area2"></div>
+        </div>
+      </div>      
 
-      <div id="reviews"></div>
+      <div id="reviews">Reviews</div>
     </div>
   </body>
   <script src="script.js"></script>
