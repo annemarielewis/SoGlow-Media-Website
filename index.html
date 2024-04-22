@@ -50,10 +50,10 @@
         </div>
       </div>
       <div id="navigation">
-        <a href="#gallery">Gallery</a>
-        <a href="#services">Services</a>
-        <a href="#reviews">Reviews</a>
-        <a href="./contact.html">Contact</a>
+        <a href="#gallery" onclick="scrollToAnchor('gallery', event)">Gallery</a>
+        <a href="#services_title" onclick="scrollToAnchor('services_title', event)">Services</a>
+        <a href="#reviews" onclick="scrollToAnchor('reviews', event)">Reviews</a>
+        <a href="./contact.html" onclick="scrollToAnchor('contact', event)">Contact</a>        
       </div>
     </div>
     <div id="main">
@@ -87,45 +87,50 @@
 
       <div id="services">
         <div id="services_title">Services</div>
+        <h1 class="discount">Pick a service from row 1 & 2 to save 20%!</h1>
         <div class="expandable-btns">
-          <div class="row1">
-            <button class="expandable-btn expandable-btn1" onclick="toggleExpand(this)">
-              Social Media Management
-            </button>
-            <div class="expandable-content"></div>
-      
-            <button class="expandable-btn expandable-btn2" onclick="toggleExpand(this)">
-              Content Production
-            </button>
-            <div class="expandable-content"></div>
-      
-            <button class="expandable-btn expandable-btn3" onclick="toggleExpand(this)">
-              Analytics and Strategy
-            </button>
-            <div class="expandable-content"></div>
-          </div>
-          <div class="expanded_area1"></div>
-          <div class="row2">
-            <button class="expandable-btn expandable-btn4" onclick="toggleExpand(this)">
-              Strategic Consulting
-            </button>
-            <div class="expandable-content"></div>
-      
-            <button class="expandable-btn expandable-btn5" onclick="toggleExpand(this)">
-              Event Engagement Package
-            </button>
-            <div class="expandable-content"></div>
-      
-            <button class="expandable-btn expandable-btn6" onclick="toggleExpand(this)">
-              Website Creation
-            </button>
-            <div class="expandable-content"></div>
-          </div>
-          <div class="expanded_area2"></div>
+            <div class="row1">
+                <button class="expandable-btn expandable-btn1" onclick="toggleExpand(this)">
+                    Social Media Management
+                </button>
+                <div class="expandable-content"></div>
+    
+                <button class="expandable-btn expandable-btn2" onclick="toggleExpand(this)">
+                    Content Production
+                </button>
+                <div class="expandable-content"></div>
+    
+                <button class="expandable-btn expandable-btn3" onclick="toggleExpand(this)">
+                    Analytics and Strategy
+                </button>
+                <div class="expandable-content"></div>
+            </div>
+            <div class="expanded_area1"></div>
+            <div class="row2">
+                <button class="expandable-btn expandable-btn4" onclick="toggleExpand(this)">
+                    Strategic Consulting
+                </button>
+                <div class="expandable-content"></div>
+    
+                <button class="expandable-btn expandable-btn5" onclick="toggleExpand(this)">
+                    Event Engagement Package
+                </button>
+                <div class="expandable-content"></div>
+    
+                <button class="expandable-btn expandable-btn6" onclick="toggleExpand(this)">
+                    Website Creation
+                </button>
+                <div class="expandable-content"></div>
+            </div>
+            <div class="expanded_area2"></div>
         </div>
-      </div>      
+    </div>
+    
+       
 
       <div id="reviews">Reviews</div>
+      <div id="gallery">Gallery</div>
+      <div id="contact">Contact</div>
     </div>
   </body>
   <script src="script.js"></script>
