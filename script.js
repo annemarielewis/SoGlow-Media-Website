@@ -28,11 +28,9 @@ function openTextMessage() {
       contactButtons.style.transition = 'opacity 2s ease'; // Add transition effect
   }
   
-    // Call the fadeInContactButtons function IF the page isn't loaded from the about.html page
+    // Call the fadeInContactButtons function
+fadeInQuote();
 
-    if (document.referrer && !document.referrer.includes('about.html')) {
-        fadeInQuote();
-    }
     
 
 
@@ -51,10 +49,9 @@ function fadeInContactButtons() {
     contactButtons.style.transition = 'opacity 2s ease'; // Add transition effect
 }
 
-  // Call the fadeInContactButtons function IF the page isn't loaded from the about.html page
-  if (document.referrer && !document.referrer.includes('about.html')) {
+  // Call the fadeInContactButtons function
     fadeInContactButtons();
-}
+
 
 
 // Function to handle button clicks and toggle active class on contact buttons
