@@ -1,12 +1,13 @@
 
 
+/* general */
+
 body {
-    height: 100vh; /* 100% of viewport height */
+    height: 100vh;
     background-color: rgb(236, 241, 252);
 }
 
 #main {
-    /* width: 100%; */
     height: auto;
     background-color: rgb(236, 241, 252);
     box-shadow: inset 0 0 20px 0 rgba(174, 187, 251, 0.5);
@@ -24,6 +25,33 @@ h1 {
     font-weight: bold;
   }
 
+h3 {
+    color: white !important;
+    padding-top: 10px;
+    font-size: 2.5rem !important;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+/* top banner */
+
+#topbanner {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -.5rem;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    padding-bottom: .25rem;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 a {
     font-size: 22px;
     font-weight: 300;
@@ -34,143 +62,31 @@ a {
     text-decoration: none !important;
     }
 
-    a:hover {
-        font-weight: 900;
-        color: green;
-    }
-
-    .logo {
-        width: 5rem;
-        height: 5rem;
-    }
+a:hover {
+    font-weight: 900;
+    color: green;
+ }
     
-    .logo-title{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-        padding-left: 0rem;
-        padding-bottom: .25rem;
-    }
-    
-    .logo {
-        padding-right: 1rem;
-    }
-    
-    #topbanner {
-        position: fixed;
-        width: 100%;
-        /* height: 104px; */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: -.5rem;
-        padding-left: 2rem;
-        padding-right: 2.5rem;
-        padding-bottom: .25rem;
-        background-color: white;
-        /* position: relative; */
-        z-index: 10;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    }
+.logo {
+    padding-right: 1rem;
+ }
 
-    #quote-container {
-        position: relative;
-        /* background-color: blue; */
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column; /* Stack items in a column */
-        justify-content: center; /* Align items vertically in the center */
-        align-items: center; /* Align items horizontally in the center */
-        /* height: 100vh; Adjust height as needed */
-    }
-
-    .contact_buttons {
-        margin: 0rem;
-        
-    }
-    
-    .contact_btn {
-        margin-right: 2rem;
-        margin-left: 2rem;
-        color: #fff;
-        /* font-style: italic; */
-        font-weight: bolder;
-        font-size: 4rem;
-        padding: 13px 18px; /* Padding around the text */
-        border: none; /* No border */
-        border-radius: 10px; 
-        cursor: pointer; 
-        font-size: 28px; 
-    }
-
-    .contact_btn1 {
-        background-color: rgb(80, 150, 248);
-      }
-
-      .contact_btn2 {
-        background-color: #34b552;
-        color: #fff;
-      }
-
-      /* .contact_btn1:hover {
-        background-color: rgb(235, 210, 16);
-        text-shadow: 
-        -1px -1px 0 rgba(0, 0, 0, 0.1),  
-         1px -1px 0 rgba(0, 0, 0, 0.1),
-        -1px  1px 0 rgba(0, 0, 0, 0.1),
-         1px  1px 0 rgba(0, 0, 0, 0.1);
-      } */
-
-      .contact_btn2:hover {
-        /* background-color:rgb(154, 193, 247); Green color on hover */
-      }
-
-      .expandable-btn.contact_btn1.active, .expandable-btn.contact_btn2.active {
-        background-color: rgb(235, 210, 16);
-        text-shadow: 
-        -1px -1px 0 rgba(0, 0, 0, 0.1),  
-         1px -1px 0 rgba(0, 0, 0, 0.1),
-        -1px  1px 0 rgba(0, 0, 0, 0.1),
-         1px  1px 0 rgba(0, 0, 0, 0.1);
-      }
-
-    .quote {
-        /* background-color: red; */
-        display: flex;
-        align-items: flex-start;
-        height: 30rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        /* height: 60vh; */
-    }
-
-    #quote-text {
-        font-family: "Raleway", sans-serif;
-        font-weight: 1000;
-        letter-spacing: 2px;
-        position: absolute;
-        width: 80%;
-        height: 20rem;
-        font-size: x-large;
-        top: 31.5%;
-        left: 46.5%;
-        transform: translate(-50%, -50%);
-        color: grey;
-    }
-
-
-#sophie-quote {
+.logo-title{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    margin: 0rem;
-    padding: 0rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 0rem;
+    padding-bottom: .25rem;
 }
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* sophie image and quote and contact buttons */
 
 .sophie_and_quote {
     display: flex;
@@ -184,7 +100,7 @@ a {
     width: 20rem;
     align-self: flex-end;
     margin-right: 1rem;
-    }
+}
 
 .sophie_img {
     width: 27rem;
@@ -192,8 +108,100 @@ a {
     transform: scaleX(-1);
     z-index: 2;
     margin-bottom: -11rem;
-   }
+ }
 
+#quote-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.quote {
+    display: flex;
+    align-items: flex-start;
+    height: 30rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* #quote-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    position: absolute;
+    width: 80%;
+    height: 20rem;
+    font-size: x-large;
+    top: 31.5%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+    color: grey;
+}
+
+
+#sophie-quote {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+margin: 0rem;
+padding: 0rem;
+} */
+
+.contact_buttons {
+    margin: 0rem;  
+}
+
+.contact_btn {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 4rem;
+    padding: 13px 18px;
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 28px; 
+}
+
+.contact_btn1 {
+    background-color: rgb(80, 150, 248);
+  }
+
+  .contact_btn2 {
+    background-color: #34b552;
+    color: #fff;
+  }
+
+  .expandable-btn.contact_btn1.active, .expandable-btn.contact_btn2.active {
+    background-color: rgb(235, 210, 16);
+    text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.1),  
+     1px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px  1px 0 rgba(0, 0, 0, 0.1),
+     1px  1px 0 rgba(0, 0, 0, 0.1);
+  }
+
+
+/* service packages */
+
+  #services {
+    margin-top: 15rem;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    border-radius: 10px;
+    width: 70vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
 
 #services_title {
     text-align: center;
@@ -203,61 +211,29 @@ a {
     color:rgb(80, 150, 248);
 }
 
-#services {
-    margin-top: 15rem;
-    /* box-sizing: border-box; */
-    font-size: 40px;
-    /* font-weight: bold; */
-    /* font-family: "Raleway", sans-serif; */
-    /* background-color:rgb(208, 234, 42); */
-    /* height: 100vw; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:white;
-    border-radius: 10px;
-    width: 70vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
-    padding: 2rem;
-}
-
 .discount {
     font-size: 24px;
     font-style: italic;
 }
 
-#gallery_title {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    font-family: "Raleway", sans-serif;
-    color:rgb(80, 150, 248);
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#gallery {
-    /* box-sizing: border-box; */
-    margin-top: 4rem;
-    font-size: 40px;
-    font-weight: bolder;
-    padding: 2rem;
-    font-family: "Raleway", sans-serif;
-    background-color:white;
-    border-radius: 10px;
-    width: 70vw;
-    /* height: 100vw; */
+.row2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    flex-direction: row;
+    justify-content: center;
 }
 
 .expandable-btn {
     margin: 1rem;
     color: #fff;
-    /* font-style: italic; */
     font-weight: bolder;
-    padding: 10px 20px; /* Padding around the text */
-    border: none; /* No border */
+    padding: 10px 20px; 
+    border: none; 
     border-radius: 10px; 
     cursor: pointer; 
     font-size: 30px; 
@@ -296,36 +272,33 @@ a {
 }
 .expandable-btn5 {
     background-color: rgb(73, 175, 73);
-    /* text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.1),  
-     1px -1px 0 rgba(0, 0, 0, 0.1),
-    -1px  1px 0 rgba(0, 0, 0, 0.1),
-     1px  1px 0 rgba(0, 0, 0, 0.1); */
 }
 .expandable-btn6 {
     background-color: rgb(80, 150, 248);
 }
-.expandable-content {
-    display: none;
-  }
-  .expanded {
+
+.expanded {
     display: block;
-  }
+}
 
 .expanded_area1 {
     display: flex;
     justify-content: center;
   }
 
-  .expanded_area2 {
+.expanded_area2 {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-  }
+}
 
+.expandable-content {
+    display: none;
+}
+
+/* dynamically created in JS script */
 .expandable-paragraph {
     font-size: 1.5vw;
-    /* width: 70vw; */
     padding: 1rem;
     color: grey;
     background-color: white;
@@ -333,53 +306,185 @@ a {
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.7);
 }
 
+/* under service packages-expandable booking appointments */
+
+.scheduling-section {
+    display: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* #booking_title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color:rgb(80, 150, 248);
+} */
+
+.booking_btn {
+        margin: 1rem;
+        color: #fff;
+        font-weight: bolder;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px; 
+        cursor: pointer; 
+        font-size: 30px; 
+        color: white;
+        background-color: rgb(80, 150, 248);
+    }
+
+.expandable-btn-book {
+        color: #fff;
+        font-weight: bolder;
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 10px; 
+        cursor: pointer; 
+        background-color: rgb(244, 61, 165);
+        font-size: 30px;
+    }
+    
+#scheduling {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+/* #booking {
+    margin-top: 2rem;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    border-radius: 10px;
+    width: 70vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+} */
+
+
+/* gallery */
+#gallery_title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color:rgb(80, 150, 248);
+}
+
+/* #gallery_title {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 1rem;
+    font-family: "Raleway", sans-serif;
+} */
+
+#gallery {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 420px;
+    max-width: 100%;
+    height: 800px;
+    overflow-y: scroll;
+    scrollbar-width: thick;
+    scrollbar-color: rgb(80, 150, 248) white;
+    margin-top: 3rem;
+}
+
+#gallery::-webkit-scrollbar {
+    width: 10px;
+}
+
+#gallery::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 150, 248);
+    border-radius: 5px; 
+}
+
+.video-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.scroll_text {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bold-text {
     font-weight: bold !important;
 }
 
-.row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+/* mission section */
+.mission-statement {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 3rem;
 }
 
-
-.row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#reviews {
+.mission-statement h2, 
+.mission-statement h3 {
     font-size: 40px;
     font-weight: bolder;
     font-family: "Raleway", sans-serif;
     color:rgb(80, 150, 248);
-    height: 100vw;
 }
 
-
-/* owl carousel */
-
-#gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
+p {
+    margin: 1rem;
+    margin-top: 1rem !important;
+}
+.mission-statement p {
+    color: #555;
+    line-height: 1.6;
 }
 
-.owl-carousel {
-    width: 100%;
-    max-width: 900px;
+.mission-statement ul {
+    list-style-type: none;
+    padding: 0;
 }
 
+.mission-statement li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.mission-statement strong {
+    color: #333;
+}
 
 /* contact section */
+
 #contactSection {
     padding: 50px;
     background-color: #f9f9f9;
     text-align: center;
+}
+
+.contact_background {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 150, 248);
+    flex-direction: column;
+    width: 50%;
+align-items: center;
+margin-top: 3rem;
+border-radius: 10px;
+padding-top: 1rem;
+padding-bottom: 2rem;
 }
 
 .contact-form {
@@ -426,6 +531,104 @@ a {
     background-color: #0056b3;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 1rem !important;
+    border-width: 1px;
+}
+
+textarea {
+background-color: white;
+width: 70%;
+font-size: 20px;
+padding: 16px 16px;
+border-radius: 10px;
+border-color: black;
+border-width: 1px;
+margin-bottom: 1rem !important;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+input:focus-within {
+outline: none;
+border-color: #5bd183;
+border-width: 5px;
+}
+
+textarea:focus-within {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 5px;
+}
+
+.form_button {
+    background-color: #5bd183;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.form_button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+
+/* reviews */
+#reviews {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color:rgb(80, 150, 248);
+}
+
+.review_img_1 {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid rgb(178, 176, 176);
+}
+
+.reviews {
+    width: 80%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: grey;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
 
 @media (max-width: 400px) {
     /* css for screens below or equal to 600px wide */
@@ -445,8 +648,8 @@ a {
         width: 30rem;
         height: 41rem;
         margin-top: -6rem;
-        
     }
+
     #quote-text {
         position: absolute;
         width: 15rem;

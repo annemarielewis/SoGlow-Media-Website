@@ -28,8 +28,12 @@ function openTextMessage() {
       contactButtons.style.transition = 'opacity 2s ease'; // Add transition effect
   }
   
-    // Call the fadeInContactButtons function
-    fadeInQuote()
+    // Call the fadeInContactButtons function IF the page isn't loaded from the about.html page
+
+    if (document.referrer && !document.referrer.includes('about.html')) {
+        fadeInQuote();
+    }
+    
 
 
 // Function to fade contact buttons in:
@@ -47,8 +51,10 @@ function fadeInContactButtons() {
     contactButtons.style.transition = 'opacity 2s ease'; // Add transition effect
 }
 
-  // Call the fadeInContactButtons function
-  fadeInContactButtons();
+  // Call the fadeInContactButtons function IF the page isn't loaded from the about.html page
+  if (document.referrer && !document.referrer.includes('about.html')) {
+    fadeInContactButtons();
+}
 
 
 // Function to handle button clicks and toggle active class on contact buttons
@@ -67,6 +73,15 @@ function fadeInContactButtons() {
             button.classList.add('active');
         }
 
+        function toggleExpandBooking(button) {
+        const schedulingSection = document.querySelector('.scheduling-section');    
+                                //scheduling section
+                                if (schedulingSection.style.display === 'none' || schedulingSection.style.display === '') {
+                                    schedulingSection.style.display = 'block';
+                                } else {
+                                    schedulingSection.style.display = 'none';
+                                }
+                            }
 
 // function for services buttons
         function toggleExpand(button) {
@@ -74,7 +89,9 @@ function fadeInContactButtons() {
             const targetArea = document.querySelector(".expanded_area2"); // Always target expanded_area2
             const allContents = document.querySelectorAll('.expandable-content');
             const allButtons = document.querySelectorAll('.expandable-btn'); // Get all expandable buttons
-        
+            const schedulingSection = document.querySelector('.scheduling-section');    
+            
+            //services section
             // Check if the button is already active
             const isActive = button.classList.contains('active');
         
@@ -119,6 +136,7 @@ function fadeInContactButtons() {
                 paragraph.innerHTML = contentMap[button.classList[1]];
                 targetArea.appendChild(paragraph);
             }
+
         }
 
 
@@ -149,6 +167,18 @@ function scrollToAnchor(anchorId, event) {
         }
     }
 }
+
+function scrollToSectionFromHash() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        const element = document.getElementById(hash);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+}
+
+window.onload = scrollToSectionFromHash;
 
 //carosel from owl (not bootstrap):
 $(document).ready(function(){
