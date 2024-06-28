@@ -488,7 +488,7 @@ p {
     justify-content: center;
     background-color: rgb(80, 150, 248);
     flex-direction: column;
-    width: 50%;
+    width: 72%;
 align-items: center;
 margin-top: 3rem;
 border-radius: 10px;
@@ -549,7 +549,7 @@ form {
 
 input {
     background-color: white;
-    width: 70%;
+    width: 80%;
     margin-left: 12%;
     font-size: 20px;
     padding: 16px 16px;
@@ -561,7 +561,7 @@ input {
 
 textarea {
 background-color: white;
-width: 70%;
+width: 80%;
 font-size: 20px;
 padding: 16px 16px;
 border-radius: 10px;
@@ -618,7 +618,7 @@ textarea:focus-within {
 }
 
 .reviews {
-    width: 80%;
+    width: 72%;
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
