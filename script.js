@@ -31,9 +31,6 @@ function openTextMessage() {
     // Call the fadeInContactButtons function
 fadeInQuote();
 
-    
-
-
 // Function to fade contact buttons in:
 
 function fadeInContactButtons() {
