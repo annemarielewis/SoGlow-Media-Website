@@ -16,16 +16,16 @@ function openTextMessage() {
 
 // Function to fade quote in:
   function fadeInQuote() {
-      var contactButtons = document.querySelector('.quote');
+      var quote = document.querySelector('.quote');
   
       // Create a delay before the quote starts to fade in:
       setTimeout(function() {
-        contactButtons.style.opacity = '1';
+        quote.style.opacity = '1';
       }, 70);
   
       // Set initial opacity and transition property:
-      contactButtons.style.opacity = '0'; // Set initial opacity to 0
-      contactButtons.style.transition = 'opacity 2s ease'; // Add transition effect
+      quote.style.opacity = '0'; // Set initial opacity to 0
+      quote.style.transition = 'opacity 2s ease'; // Add transition effect
   }
   
     // Call the fadeInContactButtons function

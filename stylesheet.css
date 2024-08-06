@@ -95,7 +95,7 @@ a:hover {
     /* min-height: 100vh; */
     width: 70vw; /* The width here should help keep everything together even as the screen size grows */
 
-    margin-top: 10.5rem;
+    margin-top: 15rem;
     /* border: 1px solid red; */
     flex-direction: row;
     justify-content: center;
@@ -206,7 +206,8 @@ padding: 0rem;
     align-items: center;
     background-color:white;
     border-radius: 10px;
-    width: 70vw;
+    /* width: 70vw; */
+    width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     padding: 2rem;
 }
@@ -610,20 +611,7 @@ textarea:focus-within {
 }
 
 
-/* reviews */
-#reviews {
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: "Raleway", sans-serif;
-    color:rgb(80, 150, 248);
-}
-
-.review_img_1 {
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    border: 2px solid rgb(178, 176, 176);
-}
+/* REVIEW SECTION */
 
 .reviews {
     width: 72%;
@@ -636,13 +624,33 @@ textarea:focus-within {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 30rem;
+}
+  
+/* title text */
+#reviews {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color:rgb(80, 150, 248);
+    
 }
 
-.review1{
+.review_img_1 {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid rgb(178, 176, 176);
+}
+
+.review1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     align-self: center;
+    width: 100%;
+    height: 80%; /* Set height to 80% of the containing div */
+    overflow-y: auto; /* vertical scrollbar if content exceeds height */
 }
 
 /* MEDIA BREAKPOINTS */
@@ -685,56 +693,108 @@ textarea:focus-within {
 }
 
 /* MEDIA BREAKPOINTS */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #main {
+    /* #main {
         background-color: blue;
-    }
+    } */
     #sophie {
         margin-left: 5rem;
+
     }
     .sophie_img {
-        width: 12rem;
+        width: 16rem;
+
     }
     .quote {
-        height: 15rem;
-        margin-left: -12rem;
-        margin-right: 1rem;
+        height: 16rem;
+        margin-left: -16.5rem;
+        margin-right: 2rem;
+        margin-top: -5rem;
     }
+
+    .contact_buttons {
+        margin-top: -2rem;
+            }
+
     .contact_btn {
         margin-right: 2rem;
         margin-left: 2rem;
         font-size: 4rem;
         padding: 13px 18px;
     }
+
     .gallery_mission {
         flex-direction: column;
     }
+
+    .mission-statement {
+        width: 80%;
+            }
+
+    .reviews {
+        max-height: 50rem;
+    }
+    .review1 {
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto; /* vertical scrollbar if content exceeds height */
+    }
+    .expandable-btn {
+        font-size: 15px;
+    }
+    #services {width: 90%;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #main {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /* #main {
         background-color: green;
-    }
+    } */
     #sophie {
         margin-left: 2rem;
     }
     .sophie_img {
-        width: 17rem;
+        width: 18rem;
     }
+
     .quote {
-        height: 15rem;
+        height: 16rem;
         margin-left: -12rem;
         margin-right: 1rem;
     }
+
+    .contact_buttons {
+margin-right: 1.2rem;
+    }
+
+    .gallery_mission {
+        flex-direction: column-reverse;
+    }
+
+    .mission-statement {
+width: 80%;
+    }
+
+    .review1 {
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto; /* vertical scrollbar if content exceeds height */
+    }
+    .expandable-btn {
+        font-size: 17px;
+    }
+    #services {width: 90%;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    #main {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* #main {
         background-color: yellow;
-    }
+    } */
     #sophie {
         margin-left: 4rem;
     }
@@ -749,13 +809,26 @@ textarea:focus-within {
     .gallery_mission {
         flex-direction: column-reverse;
     }
+    .mission-statement {
+        width: 80%;
+            }
+
+    .review1 {
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto; /* vertical scrollbar if content exceeds height */
+    }
+    .expandable-btn {
+        font-size: 20px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    #main {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* #main {
         background-color: orange;
-    }
+    } */
     #sophie {
         margin-left: 5rem;
     }
@@ -769,18 +842,27 @@ textarea:focus-within {
     }
     .gallery_mission {
         flex-direction: row;
-    }
+        width: 90%;
+        align-items: start;}
+
     .mission-statement {
         width: 60%;
-        /* flex align at start */
     }
+
+    .review1 {
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto; /* vertical scrollbar if content exceeds height */
+    }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #main {
+    /* #main {
         background-color: pink;
-    }
+    } */
     #sophie {
         margin-left: 8rem;
     }
@@ -794,9 +876,13 @@ textarea:focus-within {
     }
     .gallery_mission {
         flex-direction: row;
+        width: 90%;
+        align-items: start;
     }
     .mission-statement {
         width: 100%;
-        /* flex align at start */
+    }
+    .review1 {
+        flex-direction: row;
     }
 }
