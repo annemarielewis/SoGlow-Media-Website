@@ -134,6 +134,7 @@ a:hover {
     height: 30rem;
     margin-left: -10rem;
     margin-right: 1rem;
+    filter: contrast(1.2) brightness(1);
 }
 
 /* #quote-text {
