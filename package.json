@@ -1,22 +1,21 @@
 {
+  "name": "sophie_website",
+  "version": "1.0.0",
+  "description": "Your project description here",
+  "main": "script.js",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "start": "node server.js"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "live-server": "^1.2.2",
     "nodemailer": "^6.9.13"
   },
-  "scripts": {
-    "build": "echo 'No build step required'",
-    "start": "node server.js"
+  "engines": {
+    "node": "14.x"
   },
-
-  "name": "sophie_website",
-  "description": "",
-  "version": "1.0.0",
-  "main": "script.js",
-  "keywords": [],
-  "author": "",
   "license": "ISC"
 }
