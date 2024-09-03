@@ -676,6 +676,17 @@ textarea:focus-within {
         position: relative;
       }
 
+      #navigation {
+        display: none;
+      }
+
+      span {
+        font-size:25px;
+      }
+
+      .logo {width: 4rem;
+    height:3.5rem;}
+
       .hidden-text {
         display: block;
         background-color: rgb(255, 255, 255);
@@ -684,8 +695,8 @@ textarea:focus-within {
         padding: 10px;
         width: 95vw; /* Width of the element */
         position: absolute; /* Absolute positioning within its containing block */
-        top: 160px; /* Position it 10px from the top */
-       right: -8px; 
+        top: 85px; /* Position it 10px from the top */
+       right: -5px; 
        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         /* Position it 10px from the right edge */
       }
@@ -702,7 +713,7 @@ textarea:focus-within {
       .sophie_and_quote {
         display: flex;
         /* min-height: 100vh; */
-        margin-top: 23rem;
+        margin-top: 18rem;
         margin-left: -5rem;
         width: 70vw; /* The width here should help keep everything together even as the screen size grows */
         /* height: 4rem; */
@@ -795,7 +806,7 @@ font-size: 25px;
     }
 
     #gallery {
-        width: 80vw;
+        width: 410px;
         max-width: 100%;
         height: 900px;
         overflow-y: scroll;
@@ -819,7 +830,7 @@ width: 95%!important;
 
 .reviews {
     max-height: 50rem;
-    width: 85%!important;
+    width: 95%!important;
 }
 .review1 {
     justify-content: start;
