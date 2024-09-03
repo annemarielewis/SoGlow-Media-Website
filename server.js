@@ -1,5 +1,9 @@
 //code to display the live webpage
 var liveServer = require("live-server");
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
 var params = {
     port: 8181,
     host: "0.0.0.0",
@@ -14,29 +18,6 @@ var params = {
 };
 liveServer.start(params);
 
-
-// code for contact submission
-
-
-require('dotenv').config(); // Load environment variables from .env file
-
-const emailUser = process.env.EMAIL_USER;
-console.log(emailUser); // Output: your-email@gmail.com
-
-
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Body parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-// Serve static files
-app.use(express.static('public'));
 
 // Start server
 app.listen(PORT, () => {

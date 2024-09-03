@@ -654,29 +654,130 @@ textarea:focus-within {
     overflow-y: auto; /* vertical scrollbar if content exceeds height */
 }
 
+.hidden-text {
+    display: none;
+  }
+
 /* MEDIA BREAKPOINTS */
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+      
     #main {
-        background-color: purple;
+        background-color: rgb(236, 241, 252);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      .hidden-text {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: grey;
+        border-radius: 10px;
+        padding: 10px;
+        width: 95vw; /* Width of the element */
+        position: absolute; /* Absolute positioning within its containing block */
+        top: 160px; /* Position it 10px from the top */
+       right: -8px; 
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        /* Position it 10px from the right edge */
+      }
+
+      #sophie {
+        margin-left: 5rem;
+
     }
-    /* css for screens below or equal to 600px wide */
-    #quote-text {
-        width: 40rem;
-        font-size: x-large;
+    .sophie_img {
+        width: 16rem;
+
     }
 
-    #quote-container {
-        margin-left: -3rem;
-        display: inline-block;
+      .sophie_and_quote {
+        display: flex;
+        /* min-height: 100vh; */
+        margin-top: 23rem;
+        margin-left: -5rem;
+        width: 70vw; /* The width here should help keep everything together even as the screen size grows */
+        /* height: 4rem; */
     }
 
     .quote {
-        /* display: inline-block; */
-        position: relative;
-        width: 30rem;
-        height: 41rem;
-        margin-top: -6rem;
+display: none;
+    }
+
+    .contact_buttons {
+        margin: 0rem;  
+  
+    }
+    
+    .contact_btn {
+width: 5rem;
+    }
+    .expandable-btn {
+        margin: .2rem;
+        padding: .5rem;
+        font-size: 14px;
+    }
+
+    #services {
+        width: 95%!important;
+    }
+    .expandable-btns {
+        width: 110%!important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+        /* align-items: center; */
+    }
+
+    .row1
+    {
+        margin-left: -.5rem;
+    }
+
+    #services_title {
+font-size: 25px;
+    }
+
+    .discount
+    {
+        font-size: 20px;
+    }
+
+    .expandable-paragraph {
+        font-size: 3vw;
+        padding: 0rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        margin: 0rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* .expanded_area1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem;
+      } */
+
+    .booking_btn {
+        margin: -.2rem;
+        color: #fff;
+        font-weight: bolder;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 10px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        color: white;
+        background-color: rgb(80, 150, 248);
     }
 
     #quote-text {
@@ -690,13 +791,49 @@ textarea:focus-within {
     }
     .gallery_mission {
         flex-direction: column;
+        align-items: center;
     }
+
+    #gallery {
+        width: 410px;
+        max-width: 100%;
+        height: 900px;
+        overflow-y: scroll;
+        scrollbar-width: thick;
+        scrollbar-color: rgb(80, 150, 248) white;
+        margin-top: 3rem;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    #gallery_title {
+        font-size: 25px;
+    }
+
+    .mission-statement {
+width: 95%!important;
+    }
+
+.contact_background {
+    width: 95%!important;
+}
+
+.reviews {
+    max-height: 50rem;
+    width: 95%!important;
+}
+.review1 {
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto; /* vertical scrollbar if content exceeds height */
+}
+
 }
 
 /* MEDIA BREAKPOINTS */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 451px) and (max-width: 600px) {
     /* #main {
         background-color: blue;
     } */
@@ -722,8 +859,8 @@ textarea:focus-within {
     .contact_btn {
         margin-right: 2rem;
         margin-left: 2rem;
-        font-size: 4rem;
-        padding: 13px 18px;
+        font-size: 5rem;
+        padding: 14px 19px;
     }
 
     .gallery_mission {
