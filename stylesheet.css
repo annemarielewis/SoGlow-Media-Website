@@ -86,7 +86,7 @@ a:hover {
 .logo {
     width: 5rem;
     height: 5rem;
-    transform: scaleY(-1);
+    transform: scaleX(-1);
 }
 
 /* sophie image and quote and contact buttons */
