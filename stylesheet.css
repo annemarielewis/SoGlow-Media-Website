@@ -487,6 +487,13 @@ p {
     color: #333;
 }
 
+/* youtube video */
+.youtubeVideo {
+    padding-top: 2.5rem;
+    /* width: 900px;
+    height: 500px; */
+}
+
 /* contact section */
 
 #contactSection {
