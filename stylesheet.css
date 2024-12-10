@@ -403,6 +403,9 @@ padding: 0rem;
 } */
 
 #gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -425,10 +428,17 @@ padding: 0rem;
     border-radius: 5px; 
 }
 
-.video-container {
+/* .video-container {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+} */
+
+
+.video-container2 {
+    width: 330px;
+    height: 600px;
+    margin-bottom: 3%;
 }
 
 .scroll_text {
@@ -816,8 +826,7 @@ font-size: 25px;
     }
 
     #gallery {
-        width: 380px;
-        max-width: 100%;
+        width: 90%;
         height: 680px;
         overflow-y: scroll;
         scrollbar-width: thick;
@@ -826,7 +835,7 @@ font-size: 25px;
         margin-top: 1rem;
    
     }
-    
+
     #gallery_title {
         font-size: 25px;
     }
